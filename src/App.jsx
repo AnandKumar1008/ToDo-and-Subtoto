@@ -11,6 +11,7 @@ const App = () => {
     if (!inpRef.current.value) return;
     setList([...list, { title: inpRef.current.value, id: id }]);
     setId(id + 1);
+    inpRef.current.value = "";
   };
   return (
     <div className="app">

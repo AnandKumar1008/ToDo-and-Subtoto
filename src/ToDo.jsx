@@ -13,6 +13,7 @@ const ToDo = ({ title }) => {
     if (!inpRef.current.value) return;
     setSubToDo([...subToDo, { id, text: inpRef.current.value }]);
     setId((p) => p + 1);
+    inpRef.current.value = "";
   };
   const handleAddlist = () => {
     setAddList(true);
